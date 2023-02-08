@@ -1,62 +1,51 @@
 // Crie uma função para verificar se um valor é Truthy
-function verificaValor(valor) {
+function verificarVerdadeiro(valor) {
   if (!!valor) {
-    console.log("É verdadeiro");
+    console.log("é verdadeiro");
   } else {
-    console.log("É falso");
+    console.log("é falso");
   }
-  return valor;
 }
 // Crie uma função matemática que retorne o perímetro de um quadrado
 // lembrando: perímetro é a soma dos quatro lados do quadrado
-function calcularPerimetro(lado1, lado2) {
-  // console.log("O perímetro do quadrado é: " + (lado1 + lado1 + lado2 + lado2));
-  var perimetro = lado1 * 2 + lado2 * 2;
-  return perimetro;
+function calcularPerimetro(lado) {
+  let resultado = lado * 4;
+  return resultado;
 }
 
 // Crie uma função que retorne o seu nome completo
 // ela deve possuir os parâmetros: nome e sobrenome
-function nomeCompleto(nome, sobrenome) {
-  var meuNome = nome + " " + sobrenome;
-  return meuNome;
+function nomeCompleto(a, b) {
+  let resultado = `${a} ${b}`;
+  return resultado;
 }
-
 // Crie uma função que verifica se um número é par
-function verificaNumero(numero) {
-  if (numero % 2 !== 0) {
-    console.log("Este numero é impar");
+function verificaPar(numero) {
+  if (numero % 2 === 0) {
+    console.log("É par");
   } else {
-    console.log("Este numero é par");
+    console.log("É impar");
   }
-  return numero;
 }
-
 // Crie uma função que retorne o tipo de
 // dado do argumento passado nela (typeof)
-function tipoDeDado(dado) {
-  return typeof dado;
+function verificaDado(dado) {
+  let tipoDado = typeof dado;
+  return tipoDado;
 }
-
 // addEventListener é uma função nativa do JavaScript
 // o primeiro parâmetro é o evento que ocorre e o segundo o Callback
 // utilize essa função para mostrar no console o seu nome completo
-// quando o evento 'scroll' ocorrer.
-
-var nomeLarissa = "Maura Larissa Costa Sena";
-function exibirNome() {
-  console.log(nomeLarissa);
-}
-addEventListener("click", exibirNome);
-
+// quando o evento 'clique' ocorrer.
+addEventListener("click", function () {
+  console.log("oi Maura");
+});
 // Corrija o erro abaixo
+var totalPaises = 193;
+
 function precisoVisitar(paisesVisitados) {
-  var totalPaises = 193;
   return `Ainda faltam ${totalPaises - paisesVisitados} países para visitar`;
 }
 function jaVisitei(paisesVisitados) {
-  var totalPaises = 193;
   return `Já visitei ${paisesVisitados} do total de ${totalPaises} países`;
 }
-precisoVisitar(20);
-jaVisitei(20);

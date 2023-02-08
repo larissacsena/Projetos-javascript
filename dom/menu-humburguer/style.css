@@ -1,0 +1,22 @@
+body, html {
+  height: 100%;
+  width: 100%;
+  font-size: 2rem;
+}
+
+.mobile {
+  display: none;
+}
+
+.mobile-button {
+  display: none;
+}
+
+@media screen and (max-width: 475px) {
+  .desktop {
+    display: none;
+  }
+  .mobile-button {
+    display: flex;
+  }
+}

@@ -1,0 +1,35 @@
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  display: flex;
+  height: 100vh;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+h1,
+h2 {
+  margin: 0;
+  padding: 0;
+}
+.botoes {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+}
+.titulos {
+  gap: 50px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  font-size: 2rem;
+}
+main{
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+button{
+  text-transform: uppercase;
+  padding: 5px 10px;
+}

@@ -11,6 +11,6 @@ function resetar() {
 function incrementar() {
   let valor = document.querySelector(".valor");
   if (valor.innerHTML < 10) {
-    valor.innerText = +valor.innerText + 1;
+    valor.innerText = Number(valor.innerText) + 1;
   }
 }

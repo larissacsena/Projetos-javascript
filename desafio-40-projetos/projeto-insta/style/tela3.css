@@ -1,0 +1,25 @@
+.terceiro-container {
+  border-radius: 10px;
+  background: #9d4da2;
+  height: 500px;
+  width: 350px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  /* padding: 40px; */
+}
+.botoes {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  width: 75%;
+}
+.botao-roxo {
+  color: white;
+  background-color: #bc93cb;
+}
+.inativo {
+  display: none;
+}

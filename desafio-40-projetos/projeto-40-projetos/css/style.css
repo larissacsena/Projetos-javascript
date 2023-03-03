@@ -1,0 +1,83 @@
+img {
+  width: 200px;
+  border-radius: 50%;
+}
+h2 {
+  letter-spacing: 5px;
+}
+h3 {
+  text-transform: uppercase;
+}
+button {
+  display: block;
+}
+body {
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+}
+h1,
+h2,
+h3,
+p {
+  margin: 0;
+  padding: 0;
+}
+h1 {
+  position: relative;
+  text-align: center;
+  font-size: 3rem;
+}
+main {
+  flex-direction: column;
+  display: flex;
+  height: 100vh;
+  align-items: center;
+}
+.main {
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  display: flex;
+  gap: 20px;
+}
+.container {
+  border-radius: 8px;
+  align-items: center;
+  gap: 20px;
+  padding: 40px 40px;
+  height: auto;
+  margin-bottom: 20px;
+  width: 650px;
+  background: grey;
+  display: flex;
+  flex-direction: column;
+}
+.section-nav {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.setinhas {
+  justify-content: center;
+  display: flex;
+  gap: 20px;
+}
+div.imagem ::before{
+  content: "dshdisah ";
+}
+h1::after {
+  position: absolute;
+  content: "";
+  width: 90px;
+  height: 5px;
+  bottom: -10px;
+  left: 90px;
+  background: blue;
+}
+
+.armin-container,
+.eren-container,
+.levi-container {
+  display: none;
+}
